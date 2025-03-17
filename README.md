@@ -1,11 +1,17 @@
+
 # Java
 java-projects
+
+
+
+
+
 
 # Sistema de Reserva de Asientos 🎟️
 
 Este proyecto implementa un **sistema de reserva de asientos** para un anfiteatro utilizando manejo de datos de forma lógica, sin bases de datos ni interfaces gráficas.
 
-## 📌 1era Parte
+## 📌 1era Parte Carpeta ReservaAsientos
 
 Se debe desarrollar un sistema que maneje la reserva de asientos para un teatro con **10 filas de 10 asientos cada una**. El sistema debe cumplir con los siguientes requisitos:
 
@@ -37,7 +43,7 @@ Se debe desarrollar un sistema que maneje la reserva de asientos para un teatro 
 
 ---
 
-## 📌 2da Parte – POO
+## 📌 2da Parte – POO Carpeta AnfiteatroSistemaTicketsPOO
 
 Se amplía el sistema para incluir la generación de **tickets de reserva**. Cada persona obtendrá un ticket al reservar su asiento. Se deben cumplir los siguientes requisitos:
 
