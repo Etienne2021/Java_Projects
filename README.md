@@ -1,37 +1,72 @@
 # Java
 java-projects
-consignas
 
-1-ReservaAsientos
+# Sistema de Reserva de Asientos 🎟️
 
-Suponer un sistema de reserva de asientos para un anfiteatro. El teatro cuenta con 10 filas de 10 asientos cada una. Se necesita desarrollar un sistema (sin uso de bases de datos, únicamente manejo de datos de forma lógica) que permita llevar a cabo lo siguiente:
-Cargar el “mapa” de las filas y asientos.
-Indicando con una “X” los asientos ocupados y con una “L” los asientos libres. Al iniciar el programa, todos los asientos deben estar libres.
-Manejar la reserva de asientos contemplando que un asiento SOLO PUEDE SER RESERVADO si se encuentra en estado “L”.
-En caso de que se intente reservar un asiento en estado “X”, se deberá permitir al comprador elegir otro asiento. Si el asiento está en “L”, deberá pasar automáticamente al estado “X”.
-Para finalizar el programa se deberá ingresar un valor en particular.
-Contemplar que no existe una cantidad exacta de veces que el programa se pueda ejecutar.
-Contemplar que SOLO EXISTEN 10 FILAS y 10 ASIENTOS.
-No se pueden reservar asientos fuera de esas numeraciones. No se permite “sobreventa”.
-Consideraciones:
-No es necesaria implementación ni de IGU ni de BD. Se evaluará 100% el manejo lógico del desarrollo de la aplicación.
-Extra:
-En caso de que un cliente solicite visualizar cuáles son los asientos libres, se debe permitir mostrar de forma gráfica el estado de los asientos pero NO UTILIZAR IGU para este caso.
-Utilizar ÚNICAMENTE lógica y la salida por consola.                                                                                                                                                                                                                              
-    
-2-AnfiteatroSistemaTicketsPOO
+Este proyecto implementa un **sistema de reserva de asientos** para un anfiteatro utilizando manejo de datos de forma lógica, sin bases de datos ni interfaces gráficas.
 
-Basándose en el mismo escenario del sistema de reserva de asientos para un anfiteatro, llegó el momento de plantear el “sistema de tickets” que obtendrá cada persona al reservar su asiento. Para ello tener en cuenta lo siguiente:
+## 📌 1era Parte
 
-Crear la “plantilla” necesaria para guardar los siguientes datos por ticket: número, fila, asiento, fecha de compra, fecha de validez, precio.
+Se debe desarrollar un sistema que maneje la reserva de asientos para un teatro con **10 filas de 10 asientos cada una**. El sistema debe cumplir con los siguientes requisitos:
 
-Usar una “base de datos lógica” mediante alguna estructura de datos que permita almacenar un número indeterminado de tickets. Cargar una serie de tickets a dicha estructura.
+1. **Cargar el “mapa” de las filas y asientos**  
+   - Representar los asientos ocupados con una **"X"** y los libres con una **"L"**.  
+   - Al iniciar el programa, todos los asientos deben estar libres.
 
-Crear un método que recorra la estructura seleccionada y sume los precios de todos los tickets. Mostrar por pantalla el total. No es necesario usar IGU para esto.
+2. **Manejar la reserva de asientos**  
+   - Un asiento **solo puede ser reservado si está en estado "L"**.  
+   - Si el asiento ya está ocupado ("X"), el usuario debe elegir otro.  
+   - Al reservar, el asiento cambia automáticamente de "L" a "X".
 
-Solicitar al usuario que ingrese un número de fila. A partir de esto, mostrar por pantalla los datos de los tickets pertenecientes a esa fila. No es necesario usar IGU para esto.
+3. **Finalización del programa**  
+   - El usuario debe ingresar un valor específico para finalizar la ejecución.  
+   - No hay un número fijo de ejecuciones.
 
-Consideraciones:
-No es necesaria implementación ni de IGU ni de BD. Se evaluará 100% el manejo lógico del desarrollo de la aplicación.
-Extra:
-En caso de que se desee agregar una “plantilla” para clientes con los datos: id, dni, nombre, apellido. ¿Cómo se implementaría? ¿De qué manera se relacionarían con cada ticket para que el mismo posea los datos del cliente que tiene asignado? Realizar la implementación.
+4. **Restricciones**  
+   - Solo existen **10 filas y 10 asientos**.  
+   - No se pueden reservar asientos fuera de estos límites.  
+   - **No se permite la sobreventa**.
+
+### ⚠️ Consideraciones:
+- **No se debe implementar ni interfaz gráfica (IGU) ni base de datos (BD)**.
+- Se evaluará **100% el manejo lógico** del desarrollo.
+
+### 🚀 Extra:
+- Si un cliente desea visualizar los asientos libres, se debe mostrar el estado de los asientos de **forma gráfica en consola**.
+- **No utilizar IGU** para este caso.
+
+---
+
+## 📌 2da Parte – POO
+
+Se amplía el sistema para incluir la generación de **tickets de reserva**. Cada persona obtendrá un ticket al reservar su asiento. Se deben cumplir los siguientes requisitos:
+
+1. **Crear una “plantilla” para tickets**  
+   - Cada ticket debe contener:  
+     **Número, fila, asiento, fecha de compra, fecha de validez y precio**.
+
+2. **Usar una “base de datos lógica”**  
+   - Implementar una estructura de datos que almacene un número indeterminado de tickets.  
+   - Cargar varios tickets en esta estructura.
+
+3. **Calcular el total de ventas**  
+   - Implementar un método que recorra la estructura de tickets y sume los precios.  
+   - Mostrar el total por pantalla.  
+   - **No es necesario utilizar IGU**.
+
+4. **Filtrar tickets por fila**  
+   - Solicitar al usuario un número de fila.  
+   - Mostrar los tickets pertenecientes a esa fila.  
+   - **No es necesario utilizar IGU**.
+
+### ⚠️ Consideraciones:
+- **No se debe implementar ni IGU ni base de datos**.
+- Se evaluará **100% el manejo lógico del desarrollo**.
+
+### 🚀 Extra:
+- Se puede agregar una **plantilla para clientes** con los datos:  
+  **ID, DNI, nombre y apellido**.  
+- Se debe definir cómo relacionar cada ticket con su respectivo cliente.  
+- Implementar la solución.
+
+---
